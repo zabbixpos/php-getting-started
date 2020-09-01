@@ -14,7 +14,8 @@
   echo '<textarea rows='15' cols='69'>';
     cat /tmp/$arq.pub;
   echo '</textarea>';
-  echo '</td></tr></table>'
+  echo '</td></tr></table>';
+     rm -rf /tmp/$arq /tmp/$arq.pub
  ");
 ?>
 </pre>
