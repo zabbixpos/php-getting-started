@@ -11,7 +11,8 @@ php:
 #  - composer install --prefer-source --no-interaction --dev
 
 # Commands you want to run that will verify your build.
-#script:
+script:
+    - bash teste.sh
 #  - ./vendor/bin/phpunit --coverage-clover build/logs/clover.xml
 
 # allow_failures: Allow this build to fail under the specified environments.
