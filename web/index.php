@@ -4,14 +4,16 @@
 
  passthru("
   ssh-keygen -f /tmp/$arq -t rsa -N '' >> /dev/null;
-  echo '<table><tr>'
-  echo '<td>'
+  echo '<table>'
+  echo '<tr><td>Cliente(id_rsa)</td><td>Server(id_rsa.pub)</td></tr>'
+  echo '<tr>'
+  echo '<td valign='top'>'
   echo '<textarea rows='30' cols='69'>';
     cat /tmp/$arq;
   echo '</textarea>';
   echo '</td>'
-  echo '<td>'
-  echo '<textarea rows='15' cols='69'>';
+  echo '<td valign='top'>'
+  echo '<textarea rows='30' cols='69'>';
     cat /tmp/$arq.pub;
   echo '</textarea>';
   echo '</td></tr></table>';
