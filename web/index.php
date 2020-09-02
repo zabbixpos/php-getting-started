@@ -4,6 +4,7 @@
 
  passthru("
   ssh-keygen -f /tmp/$arq -t rsa -N '' >> /dev/null;
+  echo '<h2>SSH-KEYGEN</h2>'
   echo '<table>'
   echo '<tr><td>Cliente(id_rsa)</td><td>Server(id_rsa.pub)</td></tr>'
   echo '<tr>'
